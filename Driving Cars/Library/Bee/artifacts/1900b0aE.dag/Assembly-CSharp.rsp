@@ -354,11 +354,13 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/BaseMakeMesh.cs"
 "Assets/Scripts/CameraSwitcher.cs"
+"Assets/Scripts/CurvedRoadMesh.cs"
 "Assets/Scripts/DestroyOutOfBounds.cs"
 "Assets/Scripts/MoveForward.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Revival.cs"
 "Assets/Scripts/SpawnManager.cs"
+"Assets/Scripts/StraightRoadMesh.cs"
 -langversion:9.0
 
 /deterministic

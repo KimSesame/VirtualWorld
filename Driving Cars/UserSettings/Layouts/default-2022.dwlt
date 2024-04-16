@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 109
+  controlID: 111
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -342,7 +342,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 300
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -409,7 +409,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 8e590000
     m_LastClickedID: 22926
-    m_ExpandedIDs: 000000004e5a0000505a0000525a0000545a0000565a0000585a00005a5a0000
+    m_ExpandedIDs: 000000001a5b00001c5b00001e5b0000205b0000225b0000245b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -437,7 +437,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000505a0000525a0000565a0000585a00005a5a0000b05a0000
+    m_ExpandedIDs: ffffffff000000001a5b00001c5b00001e5b0000205b0000225b0000245b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -889,9 +889,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 824, y: 10}
+      snapOffset: {x: -244, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 1
       id: UnityEditor.SceneViewCameraOverlay
       index: 8
       layout: 4
@@ -960,9 +960,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.789488, y: 3.4733639, z: 23.44204}
+    m_Target: {x: 21.179918, y: -1.999991, z: 29.3483}
     speed: 2
-    m_Value: {x: 6.789488, y: 3.4733639, z: 23.44204}
+    m_Value: {x: 21.179918, y: -1.999991, z: 29.3483}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1008,17 +1008,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.113050744, y: -0.70752215, z: 0.116283536, w: 0.68784183}
+    m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
     speed: 2
-    m_Value: {x: 0.11201797, y: -0.70769006, z: 0.11522117, w: 0.68800503}
+    m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_Size:
-    m_Target: 14.283737
+    m_Target: 49.605614
     speed: 2
-    m_Value: 13.668648
+    m_Value: 49.605614
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -1078,7 +1078,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 30fbffff
+      m_ExpandedIDs: 30fbffff8c590000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
