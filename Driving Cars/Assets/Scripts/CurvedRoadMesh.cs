@@ -6,6 +6,7 @@ using UnityEngine;
 public class CurvedRoadMesh : BaseMakeMesh
 {
     public double n = 10;   // 2n triangles will be created
+    public double t = 2;    // PI / t is central angle of road
 
     protected override void SetVertices()
     {
@@ -13,7 +14,7 @@ public class CurvedRoadMesh : BaseMakeMesh
 
         for (int k = 0; k <= n; k++)
         {
-            double theta = (k / n) * pi / 2;
+            double theta = (k / n) * pi / t;
             float sinTheta = (float)Math.Sin(theta);
             float cosTheta = (float)Math.Cos(theta);
 
