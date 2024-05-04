@@ -1481,6 +1481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oncoming_Armor_Car (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4264215064362067504, guid: dbf7d06ba5f1a0243bf39b9a59bd9dd5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7225991453898883162, guid: dbf7d06ba5f1a0243bf39b9a59bd9dd5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -91.6
@@ -1740,6 +1744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerVehicle
       objectReference: {fileID: 0}
+    - target: {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -189
@@ -1871,6 +1879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oncoming_Armor_Car (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4264215064362067504, guid: dbf7d06ba5f1a0243bf39b9a59bd9dd5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7225991453898883162, guid: dbf7d06ba5f1a0243bf39b9a59bd9dd5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 171.7
@@ -1987,6 +1999,10 @@ PrefabInstance:
     - target: {fileID: 4264215064362067504, guid: dbf7d06ba5f1a0243bf39b9a59bd9dd5, type: 3}
       propertyPath: m_Name
       value: Oncoming_Armor_Car (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264215064362067504, guid: dbf7d06ba5f1a0243bf39b9a59bd9dd5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7225991453898883162, guid: dbf7d06ba5f1a0243bf39b9a59bd9dd5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3201,6 +3217,10 @@ PrefabInstance:
     - target: {fileID: 4264215064362067504, guid: dbf7d06ba5f1a0243bf39b9a59bd9dd5, type: 3}
       propertyPath: m_Name
       value: Oncoming_Armor_Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264215064362067504, guid: dbf7d06ba5f1a0243bf39b9a59bd9dd5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7225991453898883162, guid: dbf7d06ba5f1a0243bf39b9a59bd9dd5, type: 3}
       propertyPath: m_LocalPosition.x
