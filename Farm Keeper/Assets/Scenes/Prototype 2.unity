@@ -244,7 +244,7 @@ Transform:
   m_GameObject: {fileID: 425805626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35, y: 0, z: 10}
+  m_LocalPosition: {x: 35, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -327,7 +327,7 @@ Transform:
   m_GameObject: {fileID: 475985833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -443,7 +443,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 25
   m_Depth: -1
   m_CullingMask:
@@ -533,14 +533,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: fc01a3bb589cebc4aa10892db165243b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 904808789}
+      addedObject: {fileID: 904808792}
   m_SourcePrefab: {fileID: 100100000, guid: fc01a3bb589cebc4aa10892db165243b, type: 3}
 --- !u!1 &904808786 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: fc01a3bb589cebc4aa10892db165243b, type: 3}
   m_PrefabInstance: {fileID: 662985414}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &904808789
+--- !u!114 &904808792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -554,9 +554,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   verticalInput: 0
-  speed: 10
-  xRange: 10
-  zRange: 10
+  speed: 15
+  xRange: 20
+  zRange: 20
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +618,7 @@ Transform:
   m_GameObject: {fileID: 1590138454}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35, y: 0, z: 10}
+  m_LocalPosition: {x: -35, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
