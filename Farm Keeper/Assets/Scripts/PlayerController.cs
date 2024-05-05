@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject food;
     public float horizontalInput;
     public float verticalInput;
     public float speed = 15.0f;
@@ -18,6 +19,14 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        Move();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            Feed();
+    }
+
+    void Move()
     {
         // Get the user's input
         horizontalInput = Input.GetAxis("Horizontal");
@@ -36,6 +45,10 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, -zRange);
         if (transform.position.z > zRange) // upper bound
             transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
+    }
 
+    void Feed()
+    {
+        Instantiate(food, transform.position, food.transform.rotation);
     }
 }

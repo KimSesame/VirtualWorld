@@ -393,7 +393,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -437,7 +437,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000009c5b00009e5b0000a05b0000a25b0000
+    m_ExpandedIDs: ffffffff000000009c5b00009e5b0000a25b0000ce5b00000a5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.5013334, y: 0.49862275, z: -0.49505496, w: -0.50494486}
     speed: 2
-    m_Value: {x: -0.5020733, y: 0.49786264, z: -0.4943003, w: -0.5056901}
+    m_Value: {x: -0.50133127, y: 0.4986206, z: -0.49505284, w: -0.5049427}
   m_Size:
     m_Target: 66.04867
     speed: 2
@@ -1078,21 +1078,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 30fbffffb8590000
+      m_ExpandedIDs: 30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Food_Steak_01
+        m_OriginalName: Food_Steak_01
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -1890
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 4
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 11}
       m_SearchString: 

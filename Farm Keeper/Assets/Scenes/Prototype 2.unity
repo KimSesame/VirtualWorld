@@ -552,6 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2425bffcfdf01c540b9e5a111124ddf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  food: {fileID: 4134886127321686819, guid: f02501261cf759749a16322369295cf3, type: 3}
   horizontalInput: 0
   verticalInput: 0
   speed: 15
