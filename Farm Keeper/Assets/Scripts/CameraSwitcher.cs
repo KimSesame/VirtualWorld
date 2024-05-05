@@ -13,7 +13,7 @@ public class CameraSwitcher : MonoBehaviour
 {
     public GameObject player;
 
-    private Vector3[] offset = { new(0, 30, 0), new(0, 2, 1) };
+    private Vector3[] offset = { new(0, 30, 0), new(0, 3, 1) };
     private ViewType viewType = ViewType.Top;  // set Top view as default view
 
     void Awake()
@@ -39,10 +39,10 @@ public class CameraSwitcher : MonoBehaviour
         {
             // TOP view
             case ViewType.Top:
-                transform.position = new(0, 30, 0);
+                transform.position = offset[0];
                 transform.rotation = Quaternion.Euler(90, 0, 0);
                 Camera.main.orthographic = true;
-                // Camera.main.orthographicSize = 25f;
+                Camera.main.orthographicSize = 25f;
                 return;
 
             // FPS view
@@ -50,7 +50,7 @@ public class CameraSwitcher : MonoBehaviour
                 transform.position = player.transform.TransformPoint(offset[(int)ViewType.FirstPerson]);
                 transform.rotation = player.transform.rotation * Quaternion.Euler(5, 0, 0);
                 Camera.main.orthographic = false;
-                // Camera.main.fieldOfView = 60f;
+                Camera.main.fieldOfView = 60f;
                 return;
 
             default:
