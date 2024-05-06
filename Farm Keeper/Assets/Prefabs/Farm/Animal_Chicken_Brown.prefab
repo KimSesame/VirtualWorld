@@ -271,6 +271,8 @@ GameObject:
   m_Component:
   - component: {fileID: 496984}
   - component: {fileID: 9561414}
+  - component: {fileID: -1388418502429579408}
+  - component: {fileID: -7567277147847016188}
   m_Layer: 0
   m_Name: Animal_Chicken_Brown
   m_TagString: Animal
@@ -323,6 +325,41 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &-1388418502429579408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119940}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.9343843, y: 16.061295, z: 19.859753}
+  m_Center: {x: 0.066251226, y: 7.8839936, z: 1.2587868}
+--- !u!114 &-7567277147847016188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ec25fba79800b4899b2acebac83018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  decreaseHunger: 5
+  hungerInterval: 1
 --- !u!1 &123790
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435640}
   - component: {fileID: 13786336}
+  - component: {fileID: 1606610725199180164}
   m_Layer: 0
   m_Name: SA_Animals_Chicken_Brown
   m_TagString: Untagged
@@ -961,6 +999,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0000009536743, y: -0.07978153, z: 1.2678552}
     m_Extent: {x: 3.9085295, y: 8.594743, z: 10.12587}
   m_DirtyAABB: 0
+--- !u!65 &1606610725199180164
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163158}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.8170586, y: 17.189486, z: 20.25174}
+  m_Center: {x: 0.0000009536743, y: 8.594731, z: 1.2678552}
 --- !u!1 &165356
 GameObject:
   m_ObjectHideFlags: 0

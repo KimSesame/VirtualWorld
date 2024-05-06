@@ -135,6 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3331635135894418905}
   - component: {fileID: 8896118937071313425}
+  - component: {fileID: 3786303951023798490}
   m_Layer: 0
   m_Name: SA_Animal_Horse_Black
   m_TagString: Untagged
@@ -250,6 +251,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: -0.8832464, z: 11.784651}
     m_Extent: {x: 5.571748, y: 18.315586, z: 21.710882}
   m_DirtyAABB: 0
+--- !u!65 &3786303951023798490
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476753922454593466}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.143496, y: 36.631172, z: 43.421764}
+  m_Center: {x: 0, y: 18.315582, z: 4.3370953}
 --- !u!1 &1487938122073973375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1045,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5892510931203843434}
   - component: {fileID: 5093711616943178406}
+  - component: {fileID: -7508182593856029980}
+  - component: {fileID: 1948456639646865833}
   m_Layer: 0
   m_Name: Animal_Horse_Black
   m_TagString: Animal
@@ -1073,6 +1097,41 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &-7508182593856029980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029197850581463800}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.858599, y: 36.537243, z: 43.817436}
+  m_Center: {x: 0.0000011920929, y: 18.262188, z: 4.627242}
+--- !u!114 &1948456639646865833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029197850581463800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ec25fba79800b4899b2acebac83018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  decreaseHunger: 10
+  hungerInterval: 1
 --- !u!1 &5366089004420819307
 GameObject:
   m_ObjectHideFlags: 0

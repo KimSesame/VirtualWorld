@@ -21,11 +21,16 @@ public class HungerBar : MonoBehaviour
 
     void Update()
     {
+        // Hunger Bar always look at player
         transform.LookAt(transform.position + cam.rotation * Vector3.forward, cam.rotation * Vector3.down);
+
+        if (currentHunger > maxHunger)
+            currentHunger = maxHunger;
     }
 
     void LateUpdate()
     {
+        // Represent hunger gauge
         if (currentHunger == maxHunger)
             green.transform.localScale = new(1.5f, 0.125f, 0.125f);
         else
