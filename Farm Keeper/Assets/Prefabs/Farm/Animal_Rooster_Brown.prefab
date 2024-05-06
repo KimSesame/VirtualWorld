@@ -580,6 +580,7 @@ GameObject:
   - component: {fileID: 9520126}
   - component: {fileID: -5506443190412377989}
   - component: {fileID: 2213577323654688303}
+  - component: {fileID: -656384393282326142}
   m_Layer: 0
   m_Name: Animal_Rooster_Brown
   m_TagString: Animal
@@ -667,6 +668,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decreaseHunger: 5
   hungerInterval: 1
+--- !u!114 &-656384393282326142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b26007783a27e40bd5403c8d9ccd40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 5
+  movementSpeed: 5
+  rotationSpeed: 3
 --- !u!1 &128158
 GameObject:
   m_ObjectHideFlags: 0

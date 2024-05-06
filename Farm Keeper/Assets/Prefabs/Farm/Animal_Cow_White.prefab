@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 9585270}
   - component: {fileID: -6283785981925744298}
   - component: {fileID: -380324457728562334}
+  - component: {fileID: -534652926261737743}
   m_Layer: 0
   m_Name: Animal_Cow_White
   m_TagString: Animal
@@ -124,6 +125,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decreaseHunger: 8
   hungerInterval: 1
+--- !u!114 &-534652926261737743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b26007783a27e40bd5403c8d9ccd40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 10
+  movementSpeed: 3
+  rotationSpeed: 5
 --- !u!1 &102342
 GameObject:
   m_ObjectHideFlags: 0

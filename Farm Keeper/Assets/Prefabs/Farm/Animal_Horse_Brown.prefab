@@ -1441,6 +1441,7 @@ GameObject:
   - component: {fileID: 9509470}
   - component: {fileID: -8443986025627141166}
   - component: {fileID: -5484195689905819981}
+  - component: {fileID: -5859917433677955664}
   m_Layer: 0
   m_Name: Animal_Horse_Brown
   m_TagString: Animal
@@ -1526,6 +1527,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decreaseHunger: 10
   hungerInterval: 1
+--- !u!114 &-5859917433677955664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b26007783a27e40bd5403c8d9ccd40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 13
+  movementSpeed: 8
+  rotationSpeed: 5
 --- !u!1 &156498
 GameObject:
   m_ObjectHideFlags: 0
