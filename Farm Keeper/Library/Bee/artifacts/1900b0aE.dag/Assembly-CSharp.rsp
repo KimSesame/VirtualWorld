@@ -358,6 +358,7 @@
 "Assets/Scripts/Food.cs"
 "Assets/Scripts/HungerBar.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/RestrictBoundary.cs"
 "Assets/Scripts/SpawnManager.cs"
 -langversion:9.0
 
