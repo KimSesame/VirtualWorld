@@ -139,9 +139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 10
-  movementSpeed: 3
+  movementSpeed: 2
   rotationSpeed: 5
-  changeDirectionInterval: 4
 --- !u!114 &-8790376745410641146
 MonoBehaviour:
   m_ObjectHideFlags: 0
