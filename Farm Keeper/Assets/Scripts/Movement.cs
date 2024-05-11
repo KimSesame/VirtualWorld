@@ -6,19 +6,23 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float detectionRange = 10.0f;
-    public float movementSpeed = 3.0f;
+    public float initMovementSpeed;
+    public float initRotationSpeed;
+    public float movementSpeed;
     public float rotationSpeed = 5.0f;
+    public bool isFoodDetected = false;
+    public bool isStrolling = false;
 
     private GameObject[] foods;
     private GameObject targetFood;  // nearest food
     private RestrictBoundary restrictBound;
-    private bool isFoodDetected = false;
-    private bool isStrolling = false;
     private Vector3 strollPoint;
 
     void Start()
     {
         restrictBound = GetComponent<RestrictBoundary>();
+        initMovementSpeed = movementSpeed;
+        initRotationSpeed = rotationSpeed;
     }
 
     void Update()
@@ -71,7 +75,7 @@ public class Movement : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 
-    void Stroll()
+    public void Stroll()
     {
         // Set new destination
         if (!isStrolling)
@@ -89,6 +93,8 @@ public class Movement : MonoBehaviour
         else
             isStrolling = true;
 
+        movementSpeed = initMovementSpeed;
+        rotationSpeed = initRotationSpeed;
     }
 
     void OnDrawGizmosSelected()

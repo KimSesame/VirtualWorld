@@ -2,10 +2,11 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Animal
+    - AvoidCollision
     - CameraSwitcher
-    - ChaseFood
     - Food
     - HungerBar
+    - Movement
     - PlayerController
     - RestrictBoundary
     - SpawnManager
@@ -58,21 +59,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2692}
+      Script: {instanceID: 2386}
     - Class: 114
-      Script: {instanceID: 3548}
+      Script: {instanceID: 2694}
     - Class: 114
-      Script: {instanceID: 4400}
+      Script: {instanceID: 3550}
     - Class: 114
-      Script: {instanceID: 4892}
+      Script: {instanceID: 4402}
     - Class: 114
-      Script: {instanceID: 6034}
+      Script: {instanceID: 4894}
     - Class: 114
-      Script: {instanceID: 6296}
+      Script: {instanceID: 6036}
     - Class: 114
-      Script: {instanceID: 7230}
+      Script: {instanceID: 6298}
     - Class: 114
-      Script: {instanceID: 25634}
+      Script: {instanceID: 7232}
+    - Class: 114
+      Script: {instanceID: 25152}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -178,6 +181,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 108c974bc4dcda76ec6e72951dc73248
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RestrictBoundary
   - hash:
       serializedVersion: 2
       Hash: 1321993db8249e1e05e1e0492b2bbdc3
@@ -498,10 +507,10 @@ ScriptsOnlyBuild:
     className: UnityOnCancelMessageListener
   - hash:
       serializedVersion: 2
-      Hash: cedf40e9694e6440a3ada834f54269fb
+      Hash: 77e8ed645772256e4216f8fdf68e4340
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: ChaseFood
+    className: Movement
   - hash:
       serializedVersion: 2
       Hash: 7e9cad7f71f9cc52f699bbd2d2a75734
@@ -948,11 +957,12 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 108c974bc4dcda76ec6e72951dc73248
+      Hash: 7511db2f2849adbceb340666937862b8
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: RestrictBoundary
+    className: AvoidCollision
   platform: 19
   scenePathNames:
   - Assets/Scenes/Prototype 2.unity
-  playerPath: C:/Users/USER/repos/VirtualWorlds/Farm Keeper/UnityBuild/Farm Keeper.exe
+  playerPath: "G:/\uB0B4 \uB4DC\uB77C\uC774\uBE0C/\uBA74\uC811/\uC778\uD134/\uD384\uC5B4\uBE44\uC2A4/\uD3EC\uD2B8\uD3F4\uB9AC\uC624/Farm
+    Keeper.exe"

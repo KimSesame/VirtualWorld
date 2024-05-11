@@ -148,8 +148,10 @@ GameObject:
   - component: {fileID: -7684825155045589931}
   - component: {fileID: -4812469900948196433}
   - component: {fileID: 5015901391076683291}
+  - component: {fileID: -8222799025735839741}
   - component: {fileID: -2362911870951725086}
-  m_Layer: 0
+  - component: {fileID: 7110895083644794772}
+  m_Layer: 7
   m_Name: Animal_Chicken_White
   m_TagString: Animal
   m_Icon: {fileID: 0}
@@ -220,8 +222,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7.9208055, y: 15.924882, z: 19.776464}
-  m_Center: {x: 0.030088423, y: 7.9438896, z: 1.2637986}
+  m_Size: {x: 15, y: 15.924882, z: 20}
+  m_Center: {x: 0.15147527, y: 7.9438896, z: 1.2637988}
 --- !u!114 &-4812469900948196433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ec25fba79800b4899b2acebac83018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decreaseHunger: 5
+  decreaseHunger: 3
   hungerInterval: 1
 --- !u!114 &5015901391076683291
 MonoBehaviour:
@@ -249,8 +251,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 5
+  initMovementSpeed: 3
+  initRotationSpeed: 3
   movementSpeed: 3
   rotationSpeed: 3
+  isFoodDetected: 0
+  isStrolling: 0
+--- !u!114 &-8222799025735839741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56cdd37776419c64280c2f0848a0f3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDistance: 2
 --- !u!114 &-2362911870951725086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +284,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xRange: 20
   zRange: 20
+--- !u!54 &7110895083644794772
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120214}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
 --- !u!1 &130812
 GameObject:
   m_ObjectHideFlags: 0

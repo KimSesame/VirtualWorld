@@ -1048,8 +1048,10 @@ GameObject:
   - component: {fileID: -7508182593856029980}
   - component: {fileID: 1948456639646865833}
   - component: {fileID: -5925735645576789354}
+  - component: {fileID: -4997827508239836166}
   - component: {fileID: 3391461224423711093}
-  m_Layer: 0
+  - component: {fileID: -6573487895584841090}
+  m_Layer: 7
   m_Name: Animal_Horse_Black
   m_TagString: Animal
   m_Icon: {fileID: 0}
@@ -1118,7 +1120,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 11.858599, y: 36.537243, z: 43.817436}
+  m_Size: {x: 20, y: 36.537243, z: 43.817436}
   m_Center: {x: 0.0000011920929, y: 18.262188, z: 4.627242}
 --- !u!114 &1948456639646865833
 MonoBehaviour:
@@ -1147,8 +1149,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 13
-  movementSpeed: 7
+  initMovementSpeed: 5
+  initRotationSpeed: 5
+  movementSpeed: 5
   rotationSpeed: 5
+  isFoodDetected: 0
+  isStrolling: 0
+--- !u!114 &-4997827508239836166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029197850581463800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56cdd37776419c64280c2f0848a0f3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDistance: 4
 --- !u!114 &3391461224423711093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,6 +1182,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xRange: 20
   zRange: 20
+--- !u!54 &-6573487895584841090
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029197850581463800}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
 --- !u!1 &5366089004420819307
 GameObject:
   m_ObjectHideFlags: 0

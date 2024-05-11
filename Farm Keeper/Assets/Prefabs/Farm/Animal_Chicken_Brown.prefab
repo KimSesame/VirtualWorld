@@ -274,8 +274,10 @@ GameObject:
   - component: {fileID: -1388418502429579408}
   - component: {fileID: -7567277147847016188}
   - component: {fileID: 3573570138998542350}
+  - component: {fileID: 198070289877514441}
   - component: {fileID: 2156364743784741913}
-  m_Layer: 0
+  - component: {fileID: 4357897349134771852}
+  m_Layer: 7
   m_Name: Animal_Chicken_Brown
   m_TagString: Animal
   m_Icon: {fileID: 0}
@@ -291,7 +293,7 @@ Transform:
   m_GameObject: {fileID: 119940}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.37, y: 0.19, z: -3.52}
+  m_LocalPosition: {x: 6.37, y: 0, z: -3.52}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -346,8 +348,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7.9343843, y: 16.061295, z: 19.859753}
-  m_Center: {x: 0.066251226, y: 7.8839936, z: 1.2587868}
+  m_Size: {x: 15.313556, y: 17.150023, z: 19.859753}
+  m_Center: {x: 0.12673536, y: 8.609815, z: 1.2587864}
 --- !u!114 &-7567277147847016188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,7 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ec25fba79800b4899b2acebac83018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decreaseHunger: 5
+  decreaseHunger: 3
   hungerInterval: 1
 --- !u!114 &3573570138998542350
 MonoBehaviour:
@@ -375,8 +377,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 5
+  initMovementSpeed: 3
+  initRotationSpeed: 3
   movementSpeed: 3
   rotationSpeed: 3
+  isFoodDetected: 0
+  isStrolling: 0
+--- !u!114 &198070289877514441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56cdd37776419c64280c2f0848a0f3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDistance: 2
 --- !u!114 &2156364743784741913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,6 +410,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xRange: 20
   zRange: 20
+--- !u!54 &4357897349134771852
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119940}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
 --- !u!1 &123790
 GameObject:
   m_ObjectHideFlags: 0
