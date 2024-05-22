@@ -682,6 +682,7 @@ MonoBehaviour:
   horizontalInput: 0
   verticalInput: 0
   speed: 15
+  rotationSpeed: 300
   xRange: 20
   zRange: 20
 --- !u!65 &904808795

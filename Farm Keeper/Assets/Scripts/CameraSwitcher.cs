@@ -57,4 +57,9 @@ public class CameraSwitcher : MonoBehaviour
                 return;
         }
     }
+
+    public int GetViewType()
+    {
+        return (int)viewType;
+    }
 }
