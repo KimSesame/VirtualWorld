@@ -86,16 +86,6 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(transform.forward * verticalInput * Time.deltaTime * speed, Space.World);
         }
-
-        // Restrict player's boundary
-        if (transform.position.x < -xRange) // left bound
-            transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
-        if (transform.position.x > xRange) // right bound
-            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
-        if (transform.position.z < -zRange) // lower bound
-            transform.position = new Vector3(transform.position.x, transform.position.y, -zRange);
-        if (transform.position.z > zRange) // upper bound
-            transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
     }
 
     void Feed()
