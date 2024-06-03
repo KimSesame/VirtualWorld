@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d81f91a2fe538e4ca4ff858dc5c81c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridGraph: {fileID: 824270577}
   obstaclePrefabs:
   - {fileID: 3576744679219871063, guid: 7d56cf74fab26fa4facc52ec1e5ed435, type: 3}
   - {fileID: 9134324084186412966, guid: e3196fca31082784c91a1189f9901265, type: 3}
@@ -160,7 +161,7 @@ MonoBehaviour:
   - {fileID: 7894438778824542506, guid: 34228f3a3de9dca40ab78e275135612a, type: 3}
   - {fileID: 608353261790257815, guid: 3e4ea54970c7dfb499a0166f9d58c064, type: 3}
   obstacleXIndex: 010000000100000002000000030000000500000005000000060000000600000008000000
-  obstacleYIndex: 040000000600000002000000030000000500000007000000010000000400000002000000
+  obstacleZIndex: 040000000600000002000000030000000500000007000000010000000400000002000000
 --- !u!4 &35430200
 Transform:
   m_ObjectHideFlags: 0
@@ -170,7 +171,7 @@ Transform:
   m_GameObject: {fileID: 35430198}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.74798, y: -24.180363, z: -0.29386422}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -373,7 +374,7 @@ GameObject:
   - component: {fileID: 824270576}
   - component: {fileID: 824270577}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Grid Graph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
