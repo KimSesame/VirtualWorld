@@ -359,6 +359,7 @@
 "Assets/Scripts/GridGraph.cs"
 "Assets/Scripts/Node.cs"
 "Assets/Scripts/ObstacleSpawner.cs"
+"Assets/Scripts/PlayerController.cs"
 -langversion:9.0
 /deterministic
 /optimize+

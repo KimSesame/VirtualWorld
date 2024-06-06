@@ -6,19 +6,24 @@ public class AStarSearch : MonoBehaviour
 {
     private Node startNode;
     private Node goalNode;
+    public List<Node> path;
 
     void Start()
     {
         startNode = GridGraph.inst.GetNode(GridGraph.inst.startNodeIndex[0], GridGraph.inst.startNodeIndex[1]);
         goalNode = GridGraph.inst.GetNode(GridGraph.inst.goalNodeIndex[0], GridGraph.inst.goalNodeIndex[1]);
 
-        AStar();
+        path = AStar();
+        PlayerController follower = FindObjectOfType<PlayerController>();
+        if (follower != null)
+            follower.SetPath(path);
     }
 
-    public void AStar()
+    public List<Node> AStar()
     {
         List<Node> openSet = new();
         HashSet<Node> closedSet = new();
+        List<Node> finalPath = new();
 
         startNode.gCost = 0;
         startNode.hCost = Vector3.Distance(startNode.transform.position, goalNode.transform.position);
@@ -41,9 +46,9 @@ public class AStarSearch : MonoBehaviour
 
             if (currentNode == goalNode)
             {
-                RetracePath(startNode, goalNode);
+                finalPath = RetracePath(startNode, goalNode);
                 Debug.Log("Goal found!");
-                return;
+                return finalPath;
             }
 
             foreach (Node neighbor in currentNode.neighbors)
@@ -51,7 +56,7 @@ public class AStarSearch : MonoBehaviour
                 if (closedSet.Contains(neighbor))
                     continue;
 
-                float newCostToNeighbor = currentNode.gCost + 1;
+                float newCostToNeighbor = currentNode.gCost + 1; // 모든 간선의 가중치는 1
                 if (newCostToNeighbor < neighbor.gCost || !openSet.Contains(neighbor))
                 {
                     neighbor.gCost = newCostToNeighbor;
@@ -65,9 +70,10 @@ public class AStarSearch : MonoBehaviour
         }
 
         Debug.Log("Goal not found!");
+        return finalPath;
     }
 
-    void RetracePath(Node startNode, Node endNode)
+    List<Node> RetracePath(Node startNode, Node endNode)
     {
         List<Node> path = new();
         Node currentNode = endNode;
@@ -78,11 +84,6 @@ public class AStarSearch : MonoBehaviour
             currentNode = currentNode.parent;
         }
         path.Reverse();
-
-        // 경로 시각화 (선택 사항)
-        foreach (Node node in path)
-        {
-            Debug.Log("Path: " + node.transform.position);
-        }
+        return path;
     }
 }
