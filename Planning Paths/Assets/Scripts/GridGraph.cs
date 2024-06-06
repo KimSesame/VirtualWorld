@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class GridGraph : MonoBehaviour
 {
+    public static GridGraph inst = null;
+
     public int gridSize = 9;
     public int startCoordinate = -4;
     public int nodeSpacing = 1;
+    public int[] startNodeIndex;
+    public int[] goalNodeIndex;
     public GameObject nodePrefab;
 
     private Node[,] nodes;
+
+    void Awake()
+    {
+        inst = this;
+    }
 
     void Start()
     {
@@ -54,6 +63,11 @@ public class GridGraph : MonoBehaviour
                     currentNode.neighbors.Add(nodes[x, y - 1]);
             }
         }
+    }
+
+    public Node GetNode(int x, int y)
+    {
+        return nodes[x, y];
     }
 }
 
