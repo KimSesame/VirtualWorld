@@ -5,10 +5,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+
+    private Animator playerAnim;
     private List<Node> path;
     private int targetIndex;
     private Vector3[] catmullRomPoints;
     private bool isPathSet = false;
+
+    void Start()
+    {
+        playerAnim = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -21,6 +28,7 @@ public class PlayerController : MonoBehaviour
             if (targetIndex >= catmullRomPoints.Length)
             {
                 isPathSet = false;
+                playerAnim.SetFloat("Speed_f", 0f);
                 return;
             }
         }
