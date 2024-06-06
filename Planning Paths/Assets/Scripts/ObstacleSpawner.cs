@@ -8,22 +8,20 @@ public class ObstacleSpawner : MonoBehaviour
     public int[] obstacleXIndex;
     public int[] obstacleZIndex;
 
-    private GridGraph gridGraph;
-
     // Start is called before the first frame update
     void Start()
     {
-        gridGraph = GameObject.Find("Grid Graph").GetComponent<GridGraph>();
-
         for (int i = 0; i < obstacleXIndex.Length; i++)
-            SpawnObstacle(obstacleXIndex[i] + gridGraph.startCoordinate, obstacleZIndex[i] + gridGraph.startCoordinate);
+            SpawnObstacle(obstacleXIndex[i], obstacleZIndex[i]);
     }
 
     private void SpawnObstacle(int x, int z)
     {
         int obstacleType = Random.Range(0, obstaclePrefabs.Length);
 
-        GameObject newObstacle = Instantiate(obstaclePrefabs[obstacleType], new Vector3(x, 0, z), obstaclePrefabs[obstacleType].transform.rotation);
+        GameObject newObstacle = Instantiate(obstaclePrefabs[obstacleType], new Vector3(x + GridGraph.inst.startCoordinate, 0, z + GridGraph.inst.startCoordinate), obstaclePrefabs[obstacleType].transform.rotation);
         newObstacle.transform.SetParent(this.transform);
+
+        GridGraph.inst.RemoveNode(x, z);
     }
 }
