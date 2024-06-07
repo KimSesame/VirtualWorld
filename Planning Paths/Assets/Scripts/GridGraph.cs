@@ -22,10 +22,6 @@ public class GridGraph : MonoBehaviour
         ConnectNodes();
     }
 
-    void Start()
-    {
-    }
-
     void GenerateGrid()
     {
         nodes = new Node[gridSize, gridSize];
@@ -47,12 +43,14 @@ public class GridGraph : MonoBehaviour
 
     void ConnectNodes()
     {
+        // Traverse all nodes in graph
         for (int x = 0; x < gridSize; x++)
         {
             for (int z = 0; z < gridSize; z++)
             {
                 Node currentNode = nodes[x, z];
 
+                // Add edges to four ways
                 if (x != gridSize - 1)
                     currentNode.neighbors.Add(nodes[x + 1, z]);
                 if (z != gridSize - 1)

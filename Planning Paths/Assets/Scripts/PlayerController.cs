@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
         if (Vector3.Distance(transform.position, catmullRomPoints[targetIndex]) < 0.1f)
         {
             targetIndex++;
+            // Reached to destination
             if (targetIndex >= catmullRomPoints.Length)
             {
                 isPathSet = false;
@@ -55,22 +56,19 @@ public class PlayerController : MonoBehaviour
     {
         List<Vector3> points = new();
         for (int i = 0; i < path.Count; i++)
-        {
             points.Add(path[i].transform.position);
-        }
-        // 추가 노드를 추가하여 경로의 시작과 끝을 다듬는다.
+    
+        // Add start & goal to make smoother path at start & goal
         points.Insert(0, points[0]);
         points.Add(points[points.Count - 1]);
 
         List<Vector3> catmullRomPointsList = new();
 
+        // Add Catmull-Rom spline points to path
         for (int i = 0; i < points.Count - 3; i++)
-        {
             for (float t = 0; t <= 1; t += 0.1f)
-            {
                 catmullRomPointsList.Add(CatmullRom(points[i], points[i + 1], points[i + 2], points[i + 3], t));
-            }
-        }
+                
         catmullRomPoints = catmullRomPointsList.ToArray();
     }
 
