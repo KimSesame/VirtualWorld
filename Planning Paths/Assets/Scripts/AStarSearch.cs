@@ -29,7 +29,7 @@ public class AStarSearch : MonoBehaviour
         List<Node> finalPath = new();
 
         startNode.gCost = 0;
-        startNode.hCost = Mathf.Abs(a.x - b.x) + Mathf.Abs(a.z - b.z);  // Manhattan Distance
+        startNode.hCost = Mathf.Abs(goalNode.transform.position.x - startNode.transform.position.x) + Mathf.Abs(goalNode.transform.position.z - startNode.transform.position.z);  // Manhattan Distance
         openSet.Add(startNode);
 
         // Search
@@ -67,7 +67,7 @@ public class AStarSearch : MonoBehaviour
                 if (newCostToNeighbor < neighbor.gCost || !openSet.Contains(neighbor))
                 {
                     neighbor.gCost = newCostToNeighbor;
-                    neighbor.hCost = Mathf.Abs(a.x - b.x) + Mathf.Abs(a.z - b.z);  // Manhattan Distance
+                    neighbor.hCost = Mathf.Abs(goalNode.transform.position.x - startNode.transform.position.x) + Mathf.Abs(goalNode.transform.position.z - startNode.transform.position.z);  // Manhattan Distance
                     neighbor.parent = currentNode;
 
                     if (!openSet.Contains(neighbor))
