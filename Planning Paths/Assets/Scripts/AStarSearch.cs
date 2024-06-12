@@ -8,7 +8,12 @@ public class AStarSearch : MonoBehaviour
     private Node goalNode;
     public List<Node> path;
 
-    void Start()
+    void Awake()
+    {
+        ObstacleSpawner.OnObstacleSpawned += BeginAStarSearch;
+    }
+
+    void BeginAStarSearch()
     {
         startNode = GridGraph.inst.GetNode(GridGraph.inst.startNodeIndex[0], GridGraph.inst.startNodeIndex[1]);
         goalNode = GridGraph.inst.GetNode(GridGraph.inst.goalNodeIndex[0], GridGraph.inst.goalNodeIndex[1]);
@@ -67,7 +72,7 @@ public class AStarSearch : MonoBehaviour
                 if (newCostToNeighbor < neighbor.gCost || !openSet.Contains(neighbor))
                 {
                     neighbor.gCost = newCostToNeighbor;
-                    neighbor.hCost = Mathf.Abs(goalNode.transform.position.x - startNode.transform.position.x) + Mathf.Abs(goalNode.transform.position.z - startNode.transform.position.z);  // Manhattan Distance
+                    neighbor.hCost = Mathf.Abs(goalNode.transform.position.x - neighbor.transform.position.x) + Mathf.Abs(goalNode.transform.position.z - neighbor.transform.position.z);  // Manhattan Distance
                     neighbor.parent = currentNode;
 
                     if (!openSet.Contains(neighbor))
@@ -93,6 +98,7 @@ public class AStarSearch : MonoBehaviour
         }
 
         path.Reverse();
+        Debug.Log($"{path.Count}");
         return path;
     }
 }
