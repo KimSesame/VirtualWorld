@@ -26,7 +26,7 @@ public class ObstacleSpawner : MonoBehaviour
         int obstacleType = UnityEngine.Random.Range(0, obstaclePrefabs.Length);
 
         // Set obstacle
-        GameObject newObstacle = Instantiate(obstaclePrefabs[obstacleType], new Vector3(x + GridGraph.inst.startCoordinate, 0, z + GridGraph.inst.startCoordinate), obstaclePrefabs[obstacleType].transform.rotation);
+        GameObject newObstacle = Instantiate(obstaclePrefabs[obstacleType], new Vector3(x + GridGraph.inst.startCoordinate, 0, z + GridGraph.inst.startCoordinate), Quaternion.Euler(0, 90f * UnityEngine.Random.Range(0, 4), 0));
         newObstacle.transform.SetParent(this.transform);
 
         // Remove node from graph

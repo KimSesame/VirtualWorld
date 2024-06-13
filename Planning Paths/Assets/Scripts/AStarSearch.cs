@@ -93,6 +93,7 @@ public class AStarSearch : MonoBehaviour
         // Record path
         while (currentNode != startNode)
         {
+            currentNode.gameObject.transform.localScale *= 2f;
             path.Add(currentNode);
             currentNode = currentNode.parent;
         }
